@@ -14,6 +14,10 @@ public class Dictionary {
 		loadDictionary();
 	}
 	
+	public Word getTranslation(String englishWord) {
+		return this.words.stream().filter(n -> n.getEnglish().equalsIgnoreCase(englishWord)).findFirst().get();
+	}
+	
 	public void loadDictionary() {
 		BufferedReader br = null;
 		String x = "";
