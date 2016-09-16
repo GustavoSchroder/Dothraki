@@ -5,11 +5,11 @@ public class Server {
 	public static void main(String[] args) {
 		Dictionary dictionary = new Dictionary();
 		
-		String word = "wound";
+		String sentence = "I love you";
+		String result = dictionary.translate(sentence);
 		
-		Word w = dictionary.getTranslation(word);
-		
-		System.out.println(w.getDothraki());
+		System.out.println("English: " + sentence);
+		System.out.println("Dothraki: " + result);
 	}	
 }
 

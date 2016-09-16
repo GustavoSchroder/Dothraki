@@ -15,7 +15,46 @@ public class Dictionary {
 	}
 	
 	public Word getTranslation(String englishWord) {
-		return this.words.stream().filter(n -> n.getEnglish().equalsIgnoreCase(englishWord)).findFirst().get();
+		return this.words.stream().filter(n -> n.getEnglish().split("\\(")[0].split("\\[")[0].trim().equalsIgnoreCase(englishWord)).findFirst().get();
+	}
+	
+	public String translate(String sentence) {
+		String result = "";
+		
+		String[] splitSentence = sentence.split(" ");
+		
+		for (int i = 0; i < splitSentence.length; i++) {
+			String toTranslate = splitSentence[i];
+			
+			if ((i + 1) < splitSentence.length) {
+				String nextWord = splitSentence[i + 1];
+				if (nextWord.equalsIgnoreCase("up")) {
+					toTranslate += " " + nextWord;
+					i++;
+				}
+			}
+			
+			if (toTranslate.equalsIgnoreCase("to")) {
+				if ((i + 1) < splitSentence.length) {
+					String nextWord = splitSentence[i + 1];
+					toTranslate += " " + nextWord;
+					i++;
+				}
+			}
+			
+			
+			Word w = null;
+			
+			try {
+				w = this.getTranslation(toTranslate);
+				result += w.getDothraki() + " ";
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				result += "[" + toTranslate + "] ";
+			}
+		}
+		
+		return result.trim();
 	}
 	
 	public void loadDictionary() {
