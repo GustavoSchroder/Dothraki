@@ -11,17 +11,15 @@ public class Server {
 		ServerSocket receptionSocket = new ServerSocket(6789);
 		
 		while (true) {
-			
 			Socket connectionSocket = receptionSocket.accept();
 			BufferedReader fromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
 			DataOutputStream toClient = new DataOutputStream(connectionSocket.getOutputStream());
 			String sentence = fromClient.readLine();
-
 			String result = dictionary.translate(sentence);
+			//prints dorthaki in console
+			System.out.print(" " + result);
 			toClient.writeBytes(result);
-
-			System.out.println("English: " + sentence);
-			System.out.println("Dothraki: " + result);
+			connectionSocket.close();
 		}
 	}
 }

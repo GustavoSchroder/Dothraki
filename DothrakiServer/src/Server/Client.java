@@ -2,6 +2,7 @@ package Server;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 import java.util.Scanner;
@@ -9,29 +10,20 @@ import java.util.Scanner;
 public class Client {
 	public static void main(String argv[]) throws Exception {
 
-		String palavra = "";
-		String palavraModificada;
+		String frase;
+		String fraseModificada;
 
-		Scanner doUsuario = new Scanner(System.in);
-
-		Socket socketCliente = new Socket("localhost", 6789);
-		DataOutputStream paraServidor = new DataOutputStream(socketCliente.getOutputStream());
-		BufferedReader doServidor = new BufferedReader(new InputStreamReader(socketCliente.getInputStream()));
+		BufferedReader doUsuario = new BufferedReader(new InputStreamReader(System.in));
 
 		while (true) {
-			System.out.print("Digite uma palavra: ");
-			while (true) {
-				char x = doUsuario.next().charAt(0);
-				if (x == ' ') {
-					paraServidor.writeBytes(palavra);
-					palavraModificada = " " + doServidor.readLine();
-				} else if (x == '0') {
-					socketCliente.close();
-					return;
-				} else {
-					palavra += x;
-				}
-			}
+			//have to press enter
+			Socket socketCliente = new Socket("127.0.0.1", 6789);
+			DataOutputStream paraServidor = new DataOutputStream(socketCliente.getOutputStream());
+			BufferedReader doServidor = new BufferedReader(new InputStreamReader(socketCliente.getInputStream()));
+			frase = doUsuario.readLine();
+			System.out.print(" ");
+			paraServidor.writeBytes(frase + '\n');
+			fraseModificada = doServidor.readLine();
 		}
 	}
 }
