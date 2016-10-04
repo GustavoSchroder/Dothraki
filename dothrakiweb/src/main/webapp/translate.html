@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="/css/theme-forms.css">
+	<script type="text/javascript" src="/js/jquery-3.0.0.min.js" ></script>
+	<script type="text/javascript" src="/js/materialize.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#translate').keyup(function () {
+			$.ajax({
+				url: 'http://localhost:8080/translator',
+				method: 'GET',
+				data: { toTranslate: $('#translate').val() },
+				success: function (data) {
+					$('#translated').val(data);
+					$('#translated').trigger('autoresize');
+				}
+			});
+		});
+	});
+</script>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper blue-grey darken-4">
+	  <a class="brand-logo center"><i class="material-icons">g_translate</i>Dothraki Translator</a>
+    </div>
+</nav>
+<br />
+<div class="row">
+	<div class="input-field col s6 m6 l6">
+		<textarea id="translate" class="materialize-textarea"></textarea>
+		<label for="translate">English</label>
+	</div>
+	<div class="input-field col s6 m6 l6">
+		<textarea id="translated" readonly class="materialize-textarea disabled"></textarea>
+		<label for="translate">Dothraki</label>
+	</div>
+</div>
+</body>
+</html>
