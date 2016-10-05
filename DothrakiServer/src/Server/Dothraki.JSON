@@ -3296,22 +3296,6 @@
       "quoteDothraki":""
    },
    {
-      "english":"[glas] <span id=\"glas\"></span>",
-      "dothraki":"glas",
-      "speechPart":"",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"[glen] <span id=\"glen\"></span>",
-      "dothraki":"glen",
-      "speechPart":"",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"mouth of a human",
       "dothraki":"gomma",
       "speechPart":"n",
@@ -4323,14 +4307,6 @@
       "english":"dog",
       "dothraki":"jano",
       "speechPart":"ni",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"[[Idioms_and_Phrases#Specific_uses_for_words|\"executioner\" , person responsible for someones death]]",
-      "dothraki":"jaqqa",
-      "speechPart":"n",
       "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
@@ -5500,14 +5476,6 @@
       "dothraki":"lekhilat",
       "speechPart":"v",
       "pastSG":"lekhi",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"[lexmove] <span id=\"lekhmove\"></span>",
-      "dothraki":"lekhmove",
-      "speechPart":"",
-      "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
    },
@@ -9539,14 +9507,6 @@
       "english":"white",
       "dothraki":"zasqa",
       "speechPart":"adj",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"[zerqɔlat] <span id=\"zerqolat\"></span>",
-      "dothraki":"zerqolat",
-      "speechPart":"",
       "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
