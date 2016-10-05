@@ -16,6 +16,7 @@
 				success: function (data) {
 					$('#translated').val(data);
 					$('#translated').trigger('autoresize');
+					Materialize.updateTextFields();
 				}
 			});
 		});
