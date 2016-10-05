@@ -3376,14 +3376,6 @@
       "quoteDothraki":""
    },
    {
-      "english":"(elided version, see '''[[Vocabulary#ha|ha]]''')",
-      "dothraki":"h",
-      "speechPart":"prep",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"from",
       "dothraki":"ha",
       "speechPart":"prep.&rarr;abl",
@@ -3454,14 +3446,6 @@
       "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
-   },
-   {
-      "english":"(default preposition for foreign words that don't decline)",
-      "dothraki":"haji",
-      "speechPart":"prep",
-      "pastSG":"",
-      "quoteEnglish":"I make this gift to you for what you did.",
-      "quoteDothraki":"Anha asshilak jin azh shafkea haji rekoon et shafka."
    },
    {
       "english":"because (followed by prefix /'''me-'''/)",
@@ -4680,14 +4664,6 @@
       "quoteDothraki":""
    },
    {
-      "english":"(elided version, see '''[[Vocabulary#ki|ki]]''')",
-      "dothraki":"k",
-      "speechPart":"prep",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"to capture, to wrangle, to corral",
       "dothraki":"kadat",
       "speechPart":"v",
@@ -5704,14 +5680,6 @@
       "quoteDothraki":"Ezas loy alegri h'anhaan."
    },
    {
-      "english":"(elided version, see '''[[Vocabulary#ma|ma]]''')",
-      "dothraki":"m",
-      "speechPart":"prep",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"hi (a shortened version of '''m'athchomaroon''')",
       "dothraki":"m'ach",
       "speechPart":"intj",
@@ -5888,25 +5856,9 @@
       "quoteDothraki":""
    },
    {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#ha|ha]]''') ",
-      "dothraki":"mehas",
-      "speechPart":"pn",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"five",
       "dothraki":"mek",
       "speechPart":"num",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#ki|ki]]''')",
-      "dothraki":"mekis",
-      "speechPart":"pn",
       "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
@@ -5952,26 +5904,10 @@
       "quoteDothraki":""
    },
    {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#ma|ma]]''')",
-      "dothraki":"memas",
-      "speechPart":"pn",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"to make sound",
       "dothraki":"memat",
       "speechPart":"v",
       "pastSG":"mem",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#mra|mra]]''')",
-      "dothraki":"memras",
-      "speechPart":"pn",
-      "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
    },
@@ -5988,14 +5924,6 @@
       "dothraki":"menat",
       "speechPart":"vin",
       "pastSG":"men",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#she|she]]''')",
-      "dothraki":"meshes",
-      "speechPart":"pn",
-      "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
    },
@@ -6056,22 +5984,6 @@
       "quoteDothraki":""
    },
    {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#torga|torga]]''')",
-      "dothraki":"metorgas",
-      "speechPart":"pn",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#vi|vi]]''')",
-      "dothraki":"mevis",
-      "speechPart":"pn",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"sexy",
       "dothraki":"mezahe",
       "speechPart":"adj",
@@ -6120,14 +6032,6 @@
       "quoteDothraki":""
    },
    {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#irge|irge]]''')",
-      "dothraki":"mirges",
-      "speechPart":"pn",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"to rest",
       "dothraki":"mithrat",
       "speechPart":"v",
@@ -6139,14 +6043,6 @@
       "english":"rest",
       "dothraki":"mithri",
       "speechPart":"n",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(pronominal version of a preposition, see '''[[Vocabulary#oleth|oleth]]''')",
-      "dothraki":"molethas",
-      "speechPart":"pn",
       "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
@@ -6196,14 +6092,6 @@
       "dothraki":"movelat",
       "speechPart":"v",
       "pastSG":"mov",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(elided version, see '''[[Vocabulary#mra|mra]]''')",
-      "dothraki":"mr",
-      "speechPart":"prep",
-      "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
    },
@@ -7928,14 +7816,6 @@
       "quoteDothraki":""
    },
    {
-      "english":"(elided version, see '''[[Vocabulary#ish|ish]]''')",
-      "dothraki":"'sh",
-      "speechPart":"v. aux",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
       "english":"you (respectful)",
       "dothraki":"shafka",
       "speechPart":"pn",
@@ -8379,14 +8259,6 @@
       "english":"thunder",
       "dothraki":"temme",
       "speechPart":"na",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(elided version, see '''[[Vocabulary#eth|eth]]''')",
-      "dothraki":"'th",
-      "speechPart":"v. aux",
       "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
@@ -9403,14 +9275,6 @@
       "english":"nothing",
       "dothraki":"vosi",
       "speechPart":"ni",
-      "pastSG":"",
-      "quoteEnglish":"",
-      "quoteDothraki":""
-   },
-   {
-      "english":"(elided version, see '''[[Vocabulary#vosma|vosma]]''')",
-      "dothraki":"vosm",
-      "speechPart":"conj",
       "pastSG":"",
       "quoteEnglish":"",
       "quoteDothraki":""
