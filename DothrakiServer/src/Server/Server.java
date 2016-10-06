@@ -21,7 +21,11 @@ public class Server {
 			String result = "";
 			String output = "";
 			for (int i = 0; i < parts.length; i++) {
-				result = dictionary.translate(parts[i]);
+				if (!parts[i].equals("to")){
+					result = dictionary.translate(parts[i]);
+				} else {
+					result = "";
+				}
 				if (result.contains("[")) {
 					result = "to " + parts[i];
 					result = " " + dictionary.translate(result);
@@ -35,7 +39,7 @@ public class Server {
 				}
 			}
 
-			// prints dorthaki in console
+			// prints dothraki in console
 			 System.out.print(" " + result);
 			toClient.writeBytes(output);
 			connectionSocket.close();
