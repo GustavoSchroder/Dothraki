@@ -15,7 +15,7 @@ public class Dictionary {
 	}
 	
 	public Word getTranslation(String englishWord) {
-		return this.words.stream().filter(n -> n.getEnglish().split("\\(")[0].split("\\[")[0].trim().equalsIgnoreCase(englishWord)).findFirst().get();
+		return this.words.stream().filter(n -> n.getEnglish().equalsIgnoreCase(englishWord)).findFirst().get();
 	}
 	
 	public String translate(String sentence) {
