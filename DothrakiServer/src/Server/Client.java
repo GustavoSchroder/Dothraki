@@ -20,10 +20,12 @@ public class Client {
 			Socket socketCliente = new Socket("127.0.0.1", 6789);
 			DataOutputStream paraServidor = new DataOutputStream(socketCliente.getOutputStream());
 			BufferedReader doServidor = new BufferedReader(new InputStreamReader(socketCliente.getInputStream()));
+			System.out.println("Escreva sua frase");
 			frase = doUsuario.readLine();
-			System.out.print(" ");
 			paraServidor.writeBytes(frase + '\n');
 			fraseModificada = doServidor.readLine();
+			System.out.println(fraseModificada);
+			socketCliente.close();
 		}
 	}
 }

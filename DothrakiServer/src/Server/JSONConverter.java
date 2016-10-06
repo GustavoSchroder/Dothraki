@@ -22,11 +22,27 @@ public class JSONConverter {
 				JSONObject obj = (JSONObject)objs.get(i);
 				Word w = new Word();
 				w.setDothraki(obj.getString(DOTHRAKI));
-				w.setEnglish(obj.getString(ENGLISH));
 				w.setPastSG(obj.getString(PASTSG));
 				w.setQuoteDothraki(obj.getString(QUOTEDOTHRAKI));
 				w.setQuoteEnglish(obj.getString(QUOTEENGLISH));
 				w.setSpeechPart(obj.getString(SPEECHPART));
+				
+				String english = treatWord(obj.getString(ENGLISH));
+				
+				if(english.contains(",")) {
+					Word aux = new Word();
+					aux.setDothraki(obj.getString(DOTHRAKI));
+					aux.setPastSG(obj.getString(PASTSG));
+					aux.setQuoteDothraki(obj.getString(QUOTEDOTHRAKI));
+					aux.setQuoteEnglish(obj.getString(QUOTEENGLISH));
+					aux.setSpeechPart(obj.getString(SPEECHPART));
+					aux.setEnglish(treatWord(english.split(",")[1]));
+					w.setEnglish(treatWord(english.split(",")[0]));
+					
+					words.add(aux);
+				} else {
+					w.setEnglish(treatWord(english));
+				}
 				
 				words.add(w);
 			}
@@ -36,5 +52,20 @@ public class JSONConverter {
 		}
 		
 		return words;
+	}
+	
+	public static String treatWord(String word) {
+		if (word.contains("(")) {
+			word = word.split("\\(")[0].trim();
+		}
+		
+		if (word.contains("'''")) {
+			word = word.split("'''")[0].trim();
+		}
+		
+		if (word.contains("[")) {
+			word = word.split("\\[")[0].trim();
+		}
+		return word.trim();
 	}
 }
