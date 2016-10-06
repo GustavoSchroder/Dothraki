@@ -21,26 +21,24 @@ public class Server {
 			String result = "";
 			String output = "";
 			for (int i = 0; i < parts.length; i++) {
-				if (!parts[i].equals("to")){
+				if (!parts[i].equals("to")) {
 					result = dictionary.translate(parts[i]);
-				} else {
-					result = "";
-				}
-				if (result.contains("[")) {
-					result = "to " + parts[i];
-					result = " " + dictionary.translate(result);
 					if (result.contains("[")) {
-						output += " [" + result.substring(5, result.length());
+						result = "to " + parts[i];
+						result = " " + dictionary.translate(result);
+						if (result.contains("[")) {
+							output += " [" + result.substring(5, result.length());
+						} else {
+							output += result;
+						}
 					} else {
-						output += result;
+						output += " " + result;
 					}
-				} else {
-					output += " " + result;
 				}
 			}
 
 			// prints dothraki in console
-			 System.out.print(" " + result);
+			System.out.print(" " + result);
 			toClient.writeBytes(output);
 			connectionSocket.close();
 		}
